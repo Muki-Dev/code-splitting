@@ -24,8 +24,28 @@
   color: white;
 }
 
+
+
 .App-link {
   color: #61dafb;
+}
+
+button{
+  padding: 20px;
+  border: 2px solid blue;
+  margin: 10px;
+  font-size: 30px;
+  background: yellow;
+}
+
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+
+/*Button disabled - CSS color class  */
+color: #c0c0c0;
+background-color: #ffffff;
+border: 2px solid grey;
 }
 
 @keyframes App-logo-spin {
