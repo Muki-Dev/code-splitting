@@ -8,14 +8,17 @@ class App extends Component {
   constructor(){
       super();
       this.state = {
-        route: 'page1'
+        route: 'page1',
+        components: ''
       }
     }
 
     onRouteChange = (route) => {
+      // No Code Splitting
       this.setState({route: route})
     }
   render(){
+    // No Code Splitting
       if(this.state.route ==='page1'){
           return <Page1 onRouteChange={this.onRouteChange}/>
       }else if(this.state.route ==='page2'){
